@@ -1,0 +1,11 @@
+# Language Data
+
+bootstitle: '&bBoots'
+price: '&7Prize: &e{price} &7Coins{nl}&aClick to buy'
+bought: '&aOwned'
+buyinvtitle: '&aBuy {boots}?'
+buyinvyes: '&aYes'
+buyinvno: '&cNo'
+notenoughmoney: "&cYou don't have enough money!"
+puton: '&7You put on your {boots} &7Boots'
+putoff: '&7You take off your {boots} &7Boots'

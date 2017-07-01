@@ -1,0 +1,8 @@
+# Bought Boots are stored in here via UUID
+#
+# players:
+#   uuid:
+#     bought:
+#     - boots
+
+players: {}

@@ -1,0 +1,12 @@
+# Config File
+
+hidenbt: true
+items:
+  mainmenu:
+    slot: 4
+    item: CHEST
+    damage: 0
+    name: '&bBoots Menu'
+  menuframe:
+    item: STAINED_GLASS_PANE
+    damage: 9

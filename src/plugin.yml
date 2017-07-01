@@ -1,0 +1,8 @@
+main: de.MrStein.Boots
+name: Boots
+version: 0.2
+author: MrStein
+depend: [Vault]
+
+commands:
+  boots:

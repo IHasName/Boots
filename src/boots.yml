@@ -1,0 +1,101 @@
+# Boots Config
+# onetimevelocity is activated when the Player sneaks
+# Options:
+# - manual:valueX:valueY:valueZ - Manually set Velocity
+# - facing:multiplier:valueY - Veloity with Multiplier and Y Velocity
+# in direction the Player is facing
+# - effect:effecttype:speed:valueY - Plays an Effect Optional XYZ offset
+# > offsetX:offsetY:offsetZ
+# item:type:data - data can also be multible ids (it will use them randomly)
+# add onground or sneaking before every modifier to set when to activate
+
+template:
+  name: '&bTemplate'
+  item: LEATHER_BOOTS
+  effect: POTION_SWIRL
+  speed: 0.0
+  color:
+  - 85
+  - 96
+  - 202
+  options:
+    price: 1000
+    permission: some.permission
+    potioneffect:
+      type: 'SPEED'
+      amplifier: 0
+    effects:
+    - sneaking:velocity:facing:0.3:0.5
+
+boots:
+  fire:
+    name: '&cFire'
+    item: LEATHER_BOOTS
+    effect: FLAME
+    speed: 0.0
+    color:
+    - 255
+    - 0
+    - 0
+    options:
+      price: 1000
+      potioneffect:
+        type: 'FIRE_RESISTANCE'
+        amplifier: 0
+  cloud:
+    name: '&bCloud'
+    effect: CLOUD
+    speed: 0.0
+    item: IRON_BOOTS
+    options:
+      price: 1500
+      effects:
+      - onground:velocity:manual:0.0:3.0:0.0
+  jetpack:
+    name: '&6Jetpack'
+    item: GOLD_BOOTS
+    effect: MAGIC_CRIT
+    speed: 0.0
+    options:
+      price: 4000
+      effects:
+      - sneaking:velocity:facing:0.5:0.1
+  love:
+    name: '&dLove'
+    item: LEATHER_BOOTS
+    effect: COLOURED_DUST
+    speed: 0.0
+    color:
+    - 255
+    - 171
+    - 194
+    options:
+      effects:
+      - sneaking:effect:HEART:0.0:2.0
+  template:
+    name: '&bTemplate'
+    item: LEATHER_BOOTS
+    effect: POTION_SWIRL
+    speed: 1.0
+    color:
+    - 85
+    - 96
+    - 202
+    options:
+      permission: some.permission
+      price: 1000
+      potioneffect:
+        type: 'SPEED'
+        amplifier: 0
+      effects:
+      - onground:velocity:facing:0.3:0.5
+  clay:
+      name: '&6Clay'
+      item: GOLD_BOOTS
+      effect: FLAME
+      speed: 0.0
+      options:
+        price: 0
+        effects:
+        - sneaking:velocity:facing:0.5:0.1
+        - sneaking:item:STAINED_CLAY:1,2,3,4,5,6,7,8
